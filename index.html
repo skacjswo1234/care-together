@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>의정부시 다함께돌봄센터 9호점</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- 모바일 헤더 -->
+    <div class="mobile-header">
+        <div class="mobile-logo">
+            <a href="index.html"><img src="care-togeter-logo-white.jpg" alt="의정부시 다함께돌봄센터 9호점"></a>
+        </div>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="메뉴 열기">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <!-- 모바일 사이드 메뉴 -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <h3>메뉴</h3>
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="메뉴 닫기">&times;</button>
+        </div>
+        <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-list">
+                <li class="mobile-menu-item">
+                    <a href="#" class="mobile-menu-link" data-menu="company">기관안내</a>
+                    <ul class="mobile-submenu">
+                        <li><a href="#" data-submenu="greeting">인사말</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="#" class="mobile-menu-link" data-menu="program">돌봄 프로그램</a>
+                    <ul class="mobile-submenu">
+                        <li><a href="#" data-submenu="program-info">다함께돌봄사업 안내</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="#" class="mobile-menu-link" data-menu="community">커뮤니티</a>
+                    <ul class="mobile-submenu">
+                        <li><a href="#" data-submenu="notice">공지사항</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-menu-divider"></li>
+                <li class="mobile-menu-item">
+                    <a href="#" class="mobile-menu-link" id="mobileHomeLink">HOME</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="login.html" class="mobile-menu-link" id="mobileLoginLink">로그인</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="signup.html" class="mobile-menu-link">회원가입</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-footer">
+            <div class="mobile-menu-logo">
+                <img src="care-togeter-footer-logo.png" alt="의정부시 다함께돌봄센터 9호점">
+            </div>
+        </div>
+    </div>
+
+    <!-- 상단 메뉴 (데스크톱용) -->
+    <div class="top_menu">
+        <div class="container">
+            <div class="sm_menu">
+                <div class="sm_menu_links">
+                    <a href="index.html">HOME</a> | 
+                    <a href="login.html" id="smLoginLink">로그인</a> | 
+                    <a href="signup.html">회원가입</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 로고 영역 (데스크톱용) -->
+    <div id="logo">
+        <a href="index.html"><img src="care-togeter-logo-white.jpg" alt="의정부시 다함께돌봄센터 9호점"></a>
+    </div>
+
+    <!-- 헤더 네비게이션 -->
+    <div id="hd_wrapper">
+        <!-- 메인 네비게이션 -->
+        <nav id="hd_gnb">
+            <div class="gnb_wrap">
+                <ul id="pc_gnb_1dul">
+                    <!-- 기관안내 -->
+                    <li class="gnb_1dli">
+                        <a href="#" data-menu="company" class="gnb_1da">기관안내</a>
+                        <span class="bg">하위분류</span>
+                        <ul class="gnb_2dul">
+                            <li class="gnb_2dli"><a href="#" data-submenu="greeting" class="gnb_2da">인사말</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- 돌봄 프로그램 -->
+                    <li class="gnb_1dli">
+                        <a href="#" data-menu="program" class="gnb_1da">돌봄 프로그램</a>
+                        <span class="bg">하위분류</span>
+                        <ul class="gnb_2dul">
+                            <li class="gnb_2dli"><a href="#" data-submenu="program-info" class="gnb_2da">다함께돌봄사업 안내</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- 커뮤니티 -->
+                    <li class="gnb_1dli">
+                        <a href="#" data-menu="community" class="gnb_1da">커뮤니티</a>
+                        <span class="bg">하위분류</span>
+                        <ul class="gnb_2dul">
+                            <li class="gnb_2dli"><a href="#" data-submenu="notice" class="gnb_2da">공지사항</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- 메인 비주얼 -->
+    <section class="main-visual">
+        <div class="visual-content">
+            <h1 class="visual-title">믿을 수 있는 돌봄, 함께하는 행복</h1>
+            <p class="visual-subtitle">아이와 부모 모두가 안심할 수 있는 공간</p>
+        </div>
+    </section>
+
+    <!-- 메인 소개 섹션 -->
+    <section class="intro-section" id="introSection">
+        <div class="container">
+            <h2 class="section-title">의정부시 다함께돌봄센터 9호점</h2>
+            <p class="section-description">
+                아이들이 편안하게 쉬고, 마음껏 웃으며 지낼 수 있는 공간을 만들어가고 있습니다.<br>
+                쉼과 휴식 속에서 에너지를 회복하며, 놀이와 배움을 통해 자연스럽게 성장할 수 있도록<br>
+                아이 한 명 한 명을 존중하는 돌봄을 실천하고 있습니다.
+            </p>
+            <div class="intro-features">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <img src="safe.png" alt="안전한 공간">
+                    </div>
+                    <h3>안전한 공간</h3>
+                    <p>안전하고 따뜻한 환경에서 즐겁게 지낼 수 있습니다</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <img src="care.png" alt="세심한 돌봄">
+                    </div>
+                    <h3>세심한 돌봄</h3>
+                    <p>아이 한 명 한 명을 존중하는 맞춤형 돌봄을 제공합니다</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <img src="growth.png" alt="건강한 성장">
+                    </div>
+                    <h3>건강한 성장</h3>
+                    <p>놀이와 배움을 통한 자연스러운 성장을 지원합니다</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 공지사항 섹션 -->
+    <section class="notice-section" id="noticeSection">
+        <div class="container">
+            <div class="notice-board-header">
+                <h2 class="section-title">공지사항</h2>
+                <a href="#" class="btn btn-secondary" onclick="event.preventDefault(); if(typeof loadContent === 'function') { loadContent('notice'); }">더보기 →</a>
+            </div>
+            <div id="latestNotices" class="latest-notices">
+                <!-- JavaScript로 동적 로드 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 동적 콘텐츠 영역 -->
+    <div id="dynamic-content" style="display: none;">
+        <!-- 서브 메뉴 -->
+        <div class="sub_menu" id="subMenu"></div>
+        
+        <!-- 콘텐츠 영역 -->
+        <section class="content-section">
+            <div class="container">
+                <!-- 메인 콘텐츠 (전체 너비) -->
+                <main class="main-content-full" id="mainContent"></main>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- 플로팅 버튼 (TOP, 전화) -->
+    <div class="floating-buttons">
+        <a href="tel:031-840-7333" class="floating-btn floating-phone" aria-label="전화하기">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="currentColor"/>
+            </svg>
+            <span class="phone-number">031-840-7333</span>
+        </a>
+        <button class="floating-btn floating-top" id="topBtn" aria-label="맨 위로" style="display: none;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" fill="currentColor"/>
+            </svg>
+            <span>TOP</span>
+        </button>
+    </div>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="care-togeter-footer-logo.png" alt="의정부시 다함께돌봄센터 9호점">
+                </div>
+                <div class="footer-info">
+                    <h3>의정부시 다함께돌봄센터 9호점</h3>
+                    <p>지역사회와 함께 아이들의 건강한 성장을 응원합니다</p>
+                    <p>아이들이 편안하게 쉬고, 마음껏 웃으며 지낼 수 있는 공간</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>연락처 정보</h3>
+                    <p>주소: 경기도 의정부시</p>
+                    <p>전화: 031-840-7333</p>
+                    <p>운영시간: 평일 오후 2시 ~ 오후 7시</p>
+                    <p>방학기간: 오전 9시 ~ 오후 6시</p>
+                </div>
+                <div class="footer-map">
+                    <h3>찾아오시는 길</h3>
+                    <p>네이버 지도에서 위치를 확인하세요</p>
+                    <a href="https://map.naver.com/p/entry/place/1556165209?placePath=/home?entry=plt&from=map&fromPanelNum=1&additionalHeight=76&timestamp=202512152202&locale=ko&svcName=map_pcv5&searchType=place&lng=127.1052013&lat=37.7264235&c=15.00,0,0,0,dh" target="_blank" class="footer-map-link">📍 지도에서 보기</a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2024 의정부시 다함께돌봄센터 9호점. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 공지사항 작성 모달 -->
+    <div class="modal" id="noticeModal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">공지사항 작성</h2>
+                <button class="modal-close" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="noticeForm">
+                    <div class="form-group">
+                        <label for="noticeTitle">제목</label>
+                        <input type="text" id="noticeTitle" name="title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="noticeContent">내용</label>
+                        <textarea id="noticeContent" name="content" rows="10" required></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" id="cancelBtn">취소</button>
+                        <button type="submit" class="btn btn-primary">저장</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 알림 모달 -->
+    <div class="modal" id="alertModal" style="display: none;">
+        <div class="modal-content modal-small">
+            <div class="modal-header">
+                <h2 id="alertModalTitle">알림</h2>
+                <button class="modal-close" id="closeAlertModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p id="alertModalMessage"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="alertModalConfirm">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 확인 모달 -->
+    <div class="modal" id="confirmModal" style="display: none;">
+        <div class="modal-content modal-small">
+            <div class="modal-header">
+                <h2 id="confirmModalTitle">확인</h2>
+                <button class="modal-close" id="closeConfirmModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p id="confirmModalMessage"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" id="confirmModalCancel">취소</button>
+                <button type="button" class="btn btn-primary" id="confirmModalOk">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 공지사항 상세 모달 -->
+    <div class="modal" id="noticeDetailModal" style="display: none;">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h2 id="detailTitle"></h2>
+                <button class="modal-close" id="closeDetailModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="notice-detail-info">
+                    <span id="detailAuthor"></span>
+                    <span id="detailDate"></span>
+                    <span id="detailViews"></span>
+                </div>
+                <div class="notice-detail-content" id="detailContent"></div>
+                <div class="notice-detail-actions" id="detailActions" style="display: none;">
+                    <button class="btn btn-primary" id="editBtn">수정</button>
+                    <button class="btn btn-danger" id="deleteBtn">삭제</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/content.js"></script>
+    <script src="js/notice.js"></script>
+</body>
+</html>
+

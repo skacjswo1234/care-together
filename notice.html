@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항 - 의정부시 다함께돌봄센터 9호점</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- 상단 메뉴 -->
+    <div class="top_menu">
+        <div class="container">
+            <div class="sm_menu">
+                <div class="sm_menu_links">
+                    <a href="index.html">HOME</a> | 
+                    <a href="login.html" id="smLoginLink">로그인</a> | 
+                    <a href="signup.html">회원가입</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 로고 영역 -->
+    <div id="logo">
+        <a href="index.html"><img src="care-togeter-logo-white.jpg" alt="의정부시 다함께돌봄센터 9호점"></a>
+    </div>
+
+    <!-- 헤더 네비게이션 -->
+    <div id="hd_wrapper">
+        <nav id="hd_gnb">
+            <div class="gnb_wrap">
+                <ul id="pc_gnb_1dul">
+                    <li class="gnb_1dli">
+                        <a href="greeting.html" class="gnb_1da">기관안내</a>
+                        <span class="bg">하위분류</span>
+                        <ul class="gnb_2dul">
+                            <li class="gnb_2dli"><a href="greeting.html" class="gnb_2da">인사말</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb_1dli">
+                        <a href="program.html" class="gnb_1da">돌봄 프로그램</a>
+                        <span class="bg">하위분류</span>
+                        <ul class="gnb_2dul">
+                            <li class="gnb_2dli"><a href="program.html" class="gnb_2da">다함께돌봄사업 안내</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb_1dli gnb_1dli_on">
+                        <a href="notice.html" class="gnb_1da">커뮤니티</a>
+                        <span class="bg">하위분류</span>
+                        <ul class="gnb_2dul">
+                            <li class="gnb_2dli"><a href="notice.html" class="gnb_2da">공지사항</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- 페이지 타이틀 -->
+    <section class="page-title">
+        <div class="container">
+            <h1>공지사항</h1>
+            <p class="breadcrumb">
+                <a href="index.html">메인</a> > 공지사항
+            </p>
+        </div>
+    </section>
+
+    <!-- 서브 메뉴 -->
+    <div class="sub_menu">
+        <ul>
+            <li class="sm_nav active"><a href="notice.html">공지사항</a></li>
+        </ul>
+    </div>
+
+    <!-- 공지사항 목록 -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-wrapper">
+                <!-- 좌측 서브메뉴 -->
+                <aside class="sidebar">
+                    <div class="sidebar-menu">
+                        <h3 class="sidebar-title">게시판</h3>
+                        <ul class="sidebar-list">
+                            <li><a href="notice.html" class="active">공지사항</a></li>
+                        </ul>
+                    </div>
+                </aside>
+                <!-- 우측 콘텐츠 -->
+                <main class="main-content">
+                    <div class="notice-board">
+                <div class="notice-board-header">
+                    <h2>공지사항</h2>
+                    <button class="btn btn-primary" id="writeNoticeBtn" style="display: none;">글쓰기</button>
+                </div>
+                <div class="notice-table-wrapper">
+                    <table class="notice-table">
+                        <thead>
+                            <tr>
+                                <th class="col-no">번호</th>
+                                <th class="col-title">제목</th>
+                                <th class="col-author">작성자</th>
+                                <th class="col-date">작성일</th>
+                                <th class="col-views">조회수</th>
+                            </tr>
+                        </thead>
+                        <tbody id="noticeListBody">
+                            <!-- JavaScript로 동적 로드 -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="pagination" id="pagination">
+                    <!-- JavaScript로 동적 생성 -->
+                </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- 공지사항 작성 모달 -->
+    <div class="modal" id="noticeModal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">공지사항 작성</h2>
+                <button class="modal-close" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="noticeForm">
+                    <div class="form-group">
+                        <label for="noticeTitle">제목</label>
+                        <input type="text" id="noticeTitle" name="title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="noticeContent">내용</label>
+                        <textarea id="noticeContent" name="content" rows="10" required></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" id="cancelBtn">취소</button>
+                        <button type="submit" class="btn btn-primary">저장</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 공지사항 상세 모달 -->
+    <div class="modal" id="noticeDetailModal" style="display: none;">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h2 id="detailTitle"></h2>
+                <button class="modal-close" id="closeDetailModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="notice-detail-info">
+                    <span id="detailAuthor"></span>
+                    <span id="detailDate"></span>
+                    <span id="detailViews"></span>
+                </div>
+                <div class="notice-detail-content" id="detailContent"></div>
+                <div class="notice-detail-actions" id="detailActions" style="display: none;">
+                    <button class="btn btn-primary" id="editBtn">수정</button>
+                    <button class="btn btn-danger" id="deleteBtn">삭제</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>의정부시 다함께돌봄센터 9호점</h3>
+                    <p>지역사회와 함께 아이들의 건강한 성장을 응원합니다</p>
+                    <p>아이들이 편안하게 쉬고, 마음껏 웃으며 지낼 수 있는 공간</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>연락처 정보</h3>
+                    <p>주소: 경기도 의정부시</p>
+                    <p>전화: 031-840-7333</p>
+                    <p>운영시간: 평일 오후 2시 ~ 오후 7시</p>
+                    <p>방학기간: 오전 9시 ~ 오후 6시</p>
+                </div>
+                <div class="footer-map">
+                    <h3>찾아오시는 길</h3>
+                    <p>네이버 지도에서 위치를 확인하세요</p>
+                    <a href="https://map.naver.com/p/entry/place/1556165209?placePath=/home?entry=plt&from=map&fromPanelNum=1&additionalHeight=76&timestamp=202512152202&locale=ko&svcName=map_pcv5&searchType=place&lng=127.1052013&lat=37.7264235&c=15.00,0,0,0,dh" target="_blank" class="footer-map-link">📍 지도에서 보기</a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2024 의정부시 다함께돌봄센터 9호점. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/notice.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+

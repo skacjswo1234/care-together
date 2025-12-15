@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 - 의정부시 다함께돌봄센터 9호점</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- 모바일 헤더 -->
+    <div class="mobile-header">
+        <div class="mobile-logo">
+            <a href="index.html"><img src="care-togeter-logo-white.jpg" alt="의정부시 다함께돌봄센터 9호점"></a>
+        </div>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="메뉴 열기">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <!-- 모바일 사이드 메뉴 -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <h3>메뉴</h3>
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="메뉴 닫기">&times;</button>
+        </div>
+        <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-list">
+                <li class="mobile-menu-item">
+                    <a href="index.html" class="mobile-menu-link" id="mobileHomeLink">HOME</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="#" class="mobile-menu-link" data-menu="company">기관안내</a>
+                    <ul class="mobile-submenu">
+                        <li><a href="index.html" data-submenu="greeting">인사말</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="#" class="mobile-menu-link" data-menu="program">돌봄 프로그램</a>
+                    <ul class="mobile-submenu">
+                        <li><a href="index.html" data-submenu="program-info">다함께돌봄사업 안내</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="#" class="mobile-menu-link" data-menu="community">커뮤니티</a>
+                    <ul class="mobile-submenu">
+                        <li><a href="index.html" data-submenu="notice">공지사항</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-menu-divider"></li>
+                <li class="mobile-menu-item">
+                    <a href="login.html" class="mobile-menu-link" id="mobileLoginLink">로그인</a>
+                </li>
+                <li class="mobile-menu-item">
+                    <a href="signup.html" class="mobile-menu-link">회원가입</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-footer">
+            <div class="mobile-menu-logo">
+                <img src="care-togeter-footer-logo.png" alt="의정부시 다함께돌봄센터 9호점">
+            </div>
+        </div>
+    </div>
+
+    <!-- 상단 메뉴 (데스크톱용) -->
+    <div class="top_menu">
+        <div class="container">
+            <div class="sm_menu">
+                <div class="sm_menu_links">
+                    <a href="index.html">HOME</a> | 
+                    <a href="login.html" id="smLoginLink">로그인</a> | 
+                    <a href="signup.html">회원가입</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 로고 영역 -->
+    <div id="logo">
+        <a href="index.html"><img src="care-togeter-logo-white.jpg" alt="의정부시 다함께돌봄센터 9호점"></a>
+    </div>
+
+    <!-- 헤더 네비게이션 -->
+    <div id="hd_wrapper">
+        <nav id="hd_gnb">
+            <div class="gnb_wrap">
+                <ul id="pc_gnb_1dul">
+                    <li class="gnb_1dli">
+                        <a href="index.html" class="gnb_1da">기관안내</a>
+                        <span class="bg">하위분류</span>
+                        <ul class="gnb_2dul">
+                            <li class="gnb_2dli"><a href="index.html" class="gnb_2da">인사말</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb_1dli">
+                        <a href="index.html" class="gnb_1da">돌봄 프로그램</a>
+                        <span class="bg">하위분류</span>
+                        <ul class="gnb_2dul">
+                            <li class="gnb_2dli"><a href="index.html" class="gnb_2da">다함께돌봄사업 안내</a></li>
+                        </ul>
+                    </li>
+                    <li class="gnb_1dli">
+                        <a href="index.html" class="gnb_1da">커뮤니티</a>
+                        <span class="bg">하위분류</span>
+                        <ul class="gnb_2dul">
+                            <li class="gnb_2dli"><a href="index.html" class="gnb_2da">공지사항</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- 페이지 타이틀 -->
+    <section class="page-title">
+        <div class="container">
+            <div class="page-logo">
+                <img src="care-togeter-footer-logo.png" alt="의정부시 다함께돌봄센터 9호점">
+            </div>
+            <p class="breadcrumb">
+                <a href="index.html">메인</a> > 로그인
+            </p>
+        </div>
+    </section>
+
+    <!-- 로그인 폼 -->
+    <section class="content-section">
+        <div class="container">
+            <div class="auth-container">
+                <div class="auth-box">
+                    <h2>로그인</h2>
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="loginId">아이디</label>
+                            <input type="text" id="loginId" name="id" required autocomplete="username">
+                        </div>
+                        <div class="form-group">
+                            <label for="loginPassword">비밀번호</label>
+                            <input type="password" id="loginPassword" name="password" required autocomplete="current-password">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block">로그인</button>
+                        </div>
+                        <div class="auth-links">
+                            <a href="signup.html">회원가입</a>
+                        </div>
+                    </form>
+                    <div id="loginError" class="error-message" style="display: none;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="care-togeter-footer-logo.png" alt="의정부시 다함께돌봄센터 9호점">
+                </div>
+                <div class="footer-info">
+                    <h3>의정부시 다함께돌봄센터 9호점</h3>
+                    <p>지역사회와 함께 아이들의 건강한 성장을 응원합니다</p>
+                    <p>아이들이 편안하게 쉬고, 마음껏 웃으며 지낼 수 있는 공간</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>연락처 정보</h3>
+                    <p>주소: 경기도 의정부시</p>
+                    <p>전화: 031-840-7333</p>
+                    <p>운영시간: 평일 오후 2시 ~ 오후 7시</p>
+                    <p>방학기간: 오전 9시 ~ 오후 6시</p>
+                </div>
+                <div class="footer-map">
+                    <h3>찾아오시는 길</h3>
+                    <p>네이버 지도에서 위치를 확인하세요</p>
+                    <a href="https://map.naver.com/p/entry/place/1556165209?placePath=/home?entry=plt&from=map&fromPanelNum=1&additionalHeight=76&timestamp=202512152202&locale=ko&svcName=map_pcv5&searchType=place&lng=127.1052013&lat=37.7264235&c=15.00,0,0,0,dh" target="_blank" class="footer-map-link">📍 지도에서 보기</a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2024 의정부시 다함께돌봄센터 9호점. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
