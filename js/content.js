@@ -12,7 +12,7 @@ const heroData = {
     },
     notice: {
         image: 'hero-3.png',
-        title: '커뮤니티',
+        title: '공지사항',
         subtitle: ''
     }
 };
@@ -55,6 +55,32 @@ const contentData = {
                     </p>
                 </div>
             </div>
+            
+            <div class="organization-info-section">
+                <h2 class="section-title">운영법인</h2>
+                <div class="info-table-container">
+                    <table class="info-table">
+                        <tbody>
+                            <tr>
+                                <th><span class="table-icon">🏢</span> 운영법인</th>
+                                <td>사단법인 나눔고용복지재단</td>
+                            </tr>
+                            <tr>
+                                <th><span class="table-icon">📜</span> 설립근거</th>
+                                <td>「민법」 제32조, 「고용노동부 소관 비영리법인의 설립 및 감독에 관한 규칙」 제4조</td>
+                            </tr>
+                            <tr>
+                                <th><span class="table-icon">📅</span> 설립일</th>
+                                <td>2004년 11월 1일</td>
+                            </tr>
+                            <tr>
+                                <th><span class="table-icon">💝</span> 설립목적</th>
+                                <td>본 법인은 사랑과 평화의 정신으로 한국사회의 노동복지발전을 도모하고, 취약계층을 위한 종합적인 사회복지사업을 수행함으로써 복지사회 건설에 이바지함을 목적으로 한다.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         `
     },
     'program-info': {
@@ -66,86 +92,96 @@ const contentData = {
         content: `
             <div class="program-content">
                 <div class="program-section">
-                    <h2 class="program-section-title">사업 개요</h2>
+                    <h2 class="program-section-title">사업개요</h2>
                     <div class="program-section-content">
-                        <p>
-                            다함께돌봄사업은 지역사회 내 돌봄이 필요한 아이들에게 안전하고 따뜻한 돌봄 공간을 제공하여,
-                            아이들의 건강한 성장을 지원하고 부모의 일·가정 양립을 돕는 공공 돌봄 서비스입니다.
-                        </p>
-                        <p>
-                            의정부시 다함께돌봄센터 9호점은 지역 내 아이들과 부모님들이 신뢰할 수 있는
-                            전문적인 돌봄 서비스를 제공하기 위해 최선을 다하고 있습니다.
-                        </p>
-                    </div>
-                </div>
-                <div class="program-section">
-                    <h2 class="program-section-title">이용 대상</h2>
-                    <div class="program-section-content">
-                        <ul class="program-list">
-                            <li>의정부시 거주 초등학생 (1~6학년)</li>
-                            <li>방과 후 돌봄이 필요한 아동</li>
-                            <li>맞벌이 가정, 한부모 가정, 다문화 가정 등 돌봄이 필요한 가정의 아동</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="program-section">
-                    <h2 class="program-section-title">운영 시간</h2>
-                    <div class="program-section-content">
-                        <div class="time-table">
-                            <div class="time-item">
-                                <span class="time-label">평일</span>
-                                <span class="time-value">오후 2시 ~ 오후 7시</span>
-                            </div>
-                            <div class="time-item">
-                                <span class="time-label">방학 기간</span>
-                                <span class="time-value">오전 9시 ~ 오후 6시</span>
-                            </div>
-                            <div class="time-item">
-                                <span class="time-label">휴관일</span>
-                                <span class="time-value">주말, 공휴일</span>
-                            </div>
+                        <div class="info-table-container">
+                            <table class="info-table">
+                                <tbody>
+                                    <tr>
+                                        <th><span class="table-icon">📋</span> 사업개요</th>
+                                        <td>
+                                            다함께돌봄센터는<br>
+                                            초등학생 자녀들의 방과 후 및 방학 기간 돌봄 공백을 해소하고,<br>
+                                            맞벌이 가정을 포함한 가족들의 양육 부담을 경감하기 위해<br>
+                                            지역사회와 지자체가 협력하여 운영하는 공공형 초등돌봄 서비스입니다.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
+                
+                <div class="program-section">
+                    <h2 class="program-section-title">이용대상</h2>
+                    <div class="program-section-content">
+                        <div class="info-table-container">
+                            <table class="info-table">
+                                <tbody>
+                                    <tr>
+                                        <th><span class="table-icon">👨‍👩‍👧‍👦</span> 이용대상</th>
+                                        <td>
+                                            <ul class="program-list">
+                                                <li>의정부시 거주 초등학생 (1~6학년)</li>
+                                                <li>방과 후 돌봄이 필요한 아동</li>
+                                                <li>맞벌이 가정, 한부모 가정, 다문화 가정 등 돌봄이 필요한 가정의 초등학생 아동</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="program-section">
+                    <h2 class="program-section-title">운영시간</h2>
+                    <div class="program-section-content">
+                        <div class="info-table-container">
+                            <table class="info-table">
+                                <tbody>
+                                    <tr>
+                                        <th><span class="table-icon">🕐</span> 학기중</th>
+                                        <td>13:00 ~ 20:00</td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="table-icon">☀️</span> 방학중</th>
+                                        <td>09:00 ~ 18:00</td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="table-icon">🏖️</span> 휴무일</th>
+                                        <td>주말 및 공휴일</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
                 <div class="program-section">
                     <h2 class="program-section-title">주요 프로그램</h2>
                     <div class="program-section-content">
-                        <div class="program-items">
-                            <div class="program-item">
-                                <div class="program-item-icon">📚</div>
-                                <h3>학습 지원</h3>
-                                <p>숙제 지도 및 학습 지원을 통한 학습 습관 형성</p>
-                            </div>
-                            <div class="program-item">
-                                <div class="program-item-icon">🎨</div>
-                                <h3>체험 활동</h3>
-                                <p>다양한 체험 활동을 통한 창의력 및 표현력 향상</p>
-                            </div>
-                            <div class="program-item">
-                                <div class="program-item-icon">🏃</div>
-                                <h3>신체 활동</h3>
-                                <p>놀이와 운동을 통한 건강한 신체 발달</p>
-                            </div>
-                            <div class="program-item">
-                                <div class="program-item-icon">🍎</div>
-                                <h3>간식 제공</h3>
-                                <p>건강하고 안전한 간식 제공</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="program-section">
-                    <h2 class="program-section-title">돌봄 철학</h2>
-                    <div class="program-section-content">
-                        <div class="philosophy-content">
-                            <p>
-                                우리는 아이 한 명 한 명을 존중하고, 아이들의 개성을 인정하며,
-                                아이들이 자유롭게 표현하고 성장할 수 있는 환경을 만들어갑니다.
-                            </p>
-                            <p>
-                                안전한 환경에서의 돌봄, 따뜻한 마음으로의 돌봄, 전문적인 돌봄을 통해
-                                아이들이 행복하게 성장할 수 있도록 최선을 다하겠습니다.
-                            </p>
+                        <div class="info-table-container">
+                            <table class="info-table">
+                                <tbody>
+                                    <tr>
+                                        <th><span class="table-icon">📚</span> 독서활동</th>
+                                        <td>자율 독서 및 독서 지도를 통해 사고력·이해력 향상과 독서 습관 형성</td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="table-icon">🎨</span> 체험활동</th>
+                                        <td>다양한 체험 활동을 통한 창의력 및 탐구력 향상</td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="table-icon">🏃</span> 신체활동</th>
+                                        <td>건강한 신체 발달을 위한 다양한 운동 및 놀이 활동</td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="table-icon">🍎</span> 간식제공</th>
+                                        <td>건강하고 안전한 간식 제공</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
